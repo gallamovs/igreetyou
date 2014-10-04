@@ -35,9 +35,41 @@
     <div class="container">
         <div class="container-fluid"></div>
         <div class="row">
+            Your greeting will be available at url: http://<?php echo $subdomain ?>.igreetyou.com
+
             <div class="col-lg-12">
+
+                <?php echo $error;?>
+
+                <div class="add-slides">
+                    <?php echo form_open_multipart('slides/do_upload');?>
+                    <div class="slides">
+                        <div class="slide">
+                            <input type="file" name="userfile[]" size="20" />
+                            <input type="text" name="caption[]" />
+                            <input type="text" name="subcaption[]" />
+                        </div>
+
+                        <div class="slide">
+                            <input type="file" name="userfile[]" size="20" />
+                            <input type="text" name="caption[]" />
+                            <input type="text" name="subcaption[]" />
+                        </div>
+
+                        <div class="slide">
+                            <input type="file" name="userfile[]" size="20" />
+                            <input type="text" name="caption[]" />
+                            <input type="text" name="subcaption[]" />
+                        </div>
+                    </div>
+                    <input type="button" value="Add another slide" />
+                    <input type="submit" value="Publish" />
+                    </form>
+                </div>
+
+
                 <form action="" method="post">
-                    <input type="submit" name="delete" value="delete"/>
+                    <input type="submit" name="delete" value="Return to previous page"/>
                 </form>
             </div>
         </div>
