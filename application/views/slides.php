@@ -36,12 +36,9 @@
         <div class="container-fluid"></div>
         <div class="row">
             <div class="col-lg-12">
-                <div class="intro-message">
-                    <h1>IGreetYou.com</h1>
-                    <hr class="intro-divider">
-                    <div class="domain"><span class="lead">Name of Your Greeting: </span><input type="text" class="input-large search-query"><span class="lead">.igreetyou.com</span></div>
-                    <div class="next"><input type="button" class="btn btn-primary" value=Next></div>
-                </div>
+                <form action="" method="post">
+                    <input type="submit" name="delete" value="delete"/>
+                </form>
             </div>
         </div>
 
