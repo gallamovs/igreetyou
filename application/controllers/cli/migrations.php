@@ -14,9 +14,9 @@ class Migrations extends CI_Controller {
         $this->migration->latest();
     }
 
-    public function version()
+    public function version($version)
     {
         $this->load->library('migration');
-        $this->migration->version();
+        $this->migration->version($version);
     }
 }
