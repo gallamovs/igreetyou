@@ -27,8 +27,7 @@
                 auto: true,
                 infiniteLoop: true,
                 captions: true,
-                pager: false,
-                adaptiveHeight: true
+                pager: false
             });
         });
     </script>
@@ -40,7 +39,7 @@
 
 <ul class="bxslider">
     <?php foreach($slides as $slide): ?>
-        <li><img src="<?php echo $slide->image ?>" title="<?php echo $slide->content1; ?>/<?php echo $slide->content2; ?>"" /></li>
+        <li><img src="/uploads/<?php echo $slide->image ?>" title="<?php echo $slide->content1; ?>/<?php echo $slide->content2; ?>"" /></li>
     <?php endforeach; ?>
 </ul>
 

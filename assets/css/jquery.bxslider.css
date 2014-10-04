@@ -13,6 +13,10 @@
 
 /** RESET AND LAYOUT
 ===================================*/
+.container {
+    background:#000;
+    height: 100%;
+}
 
 .bx-wrapper {
 	position: relative;
@@ -30,7 +34,6 @@
 ===================================*/
 
 .bx-wrapper .bx-viewport {
-	left: -8px;
     top: -24px;
 	background: #fff;
 	
@@ -185,8 +188,8 @@
 
 .bx-wrapper .bx-caption {
 	position: absolute;
-	top: 160px;
-	left: 150px;
+	top: 10%;
+	left: 10%;
 	background: #666\9;
 	background: rgba(255, 255, 255, 0.75);
     padding: 20px;
