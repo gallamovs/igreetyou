@@ -10,7 +10,7 @@ class Slides extends CI_Controller {
             $this->load->helper('url');
             $this->load->view('slides');
 
-            if (isset($_POST['delete']) && !empty($_POST['delete'])) {
+            if ($this->input->post('delete')) {
                 $this->load->model('greets');
                 $this->greets->delete_greet($subdomain);
                 $this->session->unset_userdata('subdomain');
