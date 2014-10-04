@@ -2,12 +2,21 @@
 
 class Migrations extends CI_Controller {
 
-    public function index()
+    public function current()
     {
         $this->load->library('migration');
         $this->migration->current();
     }
-}
 
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+    public function latest()
+    {
+        $this->load->library('migration');
+        $this->migration->latest();
+    }
+
+    public function version()
+    {
+        $this->load->library('migration');
+        $this->migration->version();
+    }
+}
