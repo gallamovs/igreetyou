@@ -29,9 +29,13 @@ class Welcome extends CI_Controller {
             } else {
                 $data['error'] = 'Sorry. this name is already taken!';
             }
+
+            if (!ctype_alnum($subdomain)) {
+                $data['error'] = 'Please use only letters and numbers';
+            }
         }
 
-        if ($flag && !$this->session->userdata('subdomain')) {
+        if ($flag && !$this->session->userdata('subdomain') || !ctype_alnum($subdomain)) {
             $this->load->view('page/header');
             $this->load->view('welcome', $data);
             $this->load->view('page/footer');
