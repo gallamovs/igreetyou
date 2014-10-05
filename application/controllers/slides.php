@@ -87,7 +87,7 @@ class Slides extends CI_Controller {
         if (!$data['error']) {
             redirect('/success/index');
         } else {
-            //roolback
+            //rollback
             $this->greets->delete_slides($greet->id);
         }
     }
