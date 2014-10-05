@@ -65,7 +65,9 @@ class Slides extends CI_Controller {
 
                 if (!$this->upload->do_upload()) {
                     $data['error'] = $this->upload->display_errors();
+                    $this->load->view('page/header');
                     $this->load->view('slides', $data);
+                    $this->load->view('page/footer');
                 } else {
                     //upload picture
                     $this->upload->data();
