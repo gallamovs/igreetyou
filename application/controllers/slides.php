@@ -16,7 +16,9 @@ class Slides extends CI_Controller {
             $data['error'] = '';
 
             $this->load->helper('url');
+            $this->load->view('page/header');
             $this->load->view('slides', $data);
+            $this->load->view('page/footer');
 
             if ($this->input->post('delete')) {
                 $this->load->model('greets');
@@ -43,8 +45,8 @@ class Slides extends CI_Controller {
         $config['upload_path'] = './uploads/';
         $config['allowed_types'] = 'jpg|png';
         $config['max_size']	= '2048';
-        $config['max_width']  = '1024';
-        $config['max_height']  = '768';
+        $config['max_width']  = '5024';
+        $config['max_height']  = '5680';
         $config['file_name']  = $subdomain;
 
         $this->load->library('upload', $config);

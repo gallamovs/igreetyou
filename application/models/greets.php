@@ -15,6 +15,7 @@ class Greets extends CI_Model {
     function insert_greet($subdomain)
     {
         $this->subdomain = $subdomain;
+        $this->password = md5(time());
         $this->db->insert('greets', $this);
     }
 

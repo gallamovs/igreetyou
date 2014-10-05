@@ -28,7 +28,9 @@ class Welcome extends CI_Controller {
         }
 
         if ($flag && !$this->session->userdata('subdomain')) {
+            $this->load->view('page/header');
             $this->load->view('welcome');
+            $this->load->view('page/footer');
         } else {
             redirect('/slides/index');
         }

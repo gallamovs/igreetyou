@@ -1,0 +1,82 @@
+/*!
+ * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Courier New","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+.message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    text-align: center;
+}
+
+.message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.domain input {color:#302F2C; text-align:right; }
+.next { padding:15px; }
+.add-slides { width:500px; margin-left: auto; margin-right: auto; padding: 20px; }
+.slides { padding:20px; }
+.hidden { display:none; }
+.slide { padding: 20px; background: rgba(255,255,255,0.5); }
+.slide div { text-align: left; }
+.slide div span { display: block; padding: 10px; width: 115px; }
+.content { display: table; margin: 0 auto; padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px; height:100%; }
+.wrapper{background: url('/assets/img/background1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+}
