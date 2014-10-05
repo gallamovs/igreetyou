@@ -1,9 +1,3 @@
-<html>
-<head>
-    <title>Upload Form</title>
-</head>
-<body>
-
 <h3>Your Greeting is ready and will be available for 30 days!</h3>
 
 <ul style="padding:20px;">
@@ -13,6 +7,3 @@
 <p><?php /*echo anchor('slides', 'Upload Another File!'); */?>
     <input type="button" class="btn btn-primary" name="home" value="Return to Home page" onClick="window.location.href='/'"/>
 </p>
-
-</body>
-</html>

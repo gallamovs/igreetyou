@@ -3,7 +3,8 @@
 
                 <div class="add-slides">
                     <div class="hidden">
-                        <div class="slide">
+                        <div class="slide border-up">
+                            <div class="close">X</div>
                             <div class="image left"><span>Image:</span><input type="file" name="userfile[]" size="20" /></div>
                             <div class="caption left"><span>Caption</span><input type="text" name="caption[]" /></div>
                             <div class="subcaption left"><span>Sub Caption</span><input type="text" name="subcaption[]" /></div>

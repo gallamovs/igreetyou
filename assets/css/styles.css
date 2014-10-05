@@ -27,7 +27,7 @@ h6 {
 }
 .message {
     position: relative;
-    padding-top: 20%;
+    padding-top: 10%;
     padding-bottom: 20%;
     text-align: center;
 }
@@ -82,5 +82,7 @@ h6 {
     height:100%;
 }
 .errors {
-    color:#ff0000;
+    color:#ff0000
 }
+.border-up { border-top: 1px solid #ccc; }
+.funny.fox { background:url('../img/funnyfox.png') no-repeat; width:320px; height:155px; margin-left: auto; margin-right: auto;}

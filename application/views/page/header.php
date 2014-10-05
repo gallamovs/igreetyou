@@ -32,8 +32,10 @@
     <script src="<?php echo base_url("assets/js/bootstrap.min.js"); ?>"></script>
 </head>
 <body>
+<div class="page">
 <div class="wrapper">
     <div class="content">
         <div class="message">
+            <div class="funny fox"></div>
             <h1>igreetyou.com</h1>
             <hr class="intro-divider">
