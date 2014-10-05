@@ -74,10 +74,13 @@ h6 {
 .slide div span { display: block; padding: 10px; width: 115px; }
 .content { display: table; margin: 0 auto; padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px; height:100%; }
-.wrapper{background: url('/assets/img/background1.jpg') no-repeat center center fixed;
+.wrapper{background: url('../img/background1.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height:100%;
+}
+.errors {
+    color:#ff0000;
 }

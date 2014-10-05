@@ -4,7 +4,7 @@
 </head>
 <body>
 
-<h3>Your Slide is ready and will be available for 30 days!</h3>
+<h3>Your Greeting is ready and will be available for 30 days!</h3>
 
 <ul style="padding:20px;">
     <a href="http://igreetyou.com/index.php/show/index/<?php echo $subdomain; ?>">http://igreetyou.com/index.php/show/index/<?php echo $subdomain; ?></a>

@@ -7,6 +7,8 @@ class Welcome extends CI_Controller {
         $this->load->library('session');
         $this->load->helper('url');
 
+        $data['error'] = '';
+
         $flag = true;
 
         if ($subdomain = $this->input->post('subdomain')) {
@@ -24,12 +26,14 @@ class Welcome extends CI_Controller {
             if (!$flag) {
                 $this->greets->insert_greet($subdomain);
                 $this->session->set_userdata(array('subdomain' => $subdomain));
+            } else {
+                $data['error'] = 'Sorry. this name is already taken!';
             }
         }
 
         if ($flag && !$this->session->userdata('subdomain')) {
             $this->load->view('page/header');
-            $this->load->view('welcome');
+            $this->load->view('welcome', $data);
             $this->load->view('page/footer');
         } else {
             redirect('/slides/index');

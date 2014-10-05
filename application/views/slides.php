@@ -1,5 +1,5 @@
                 <h2>Add Images To Your Greeting</h2>
-               <?php echo $error;?>
+                <div class="errors"><?php echo $error ?></div>
 
                 <div class="add-slides">
                     <div class="hidden">
