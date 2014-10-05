@@ -29,11 +29,17 @@ class Slides extends CI_Controller {
                 $this->session->unset_userdata('subdomain');
                 redirect('/welcome/index');
             }
+        } else {
+            redirect('/welcome/index');
         }
 	}
 
     function do_upload()
     {
+        if (!$_POST) {
+            redirect('/slides/index');
+        }
+
         $subdomain = $this->session->userdata('subdomain');
 
         $this->load->model('greets');

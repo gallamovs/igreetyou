@@ -35,5 +35,5 @@
 <div class="wrapper">
     <div class="content">
         <div class="message">
-            <h1>I greet you</h1>
+            <h1>igreetyou.com</h1>
             <hr class="intro-divider">
